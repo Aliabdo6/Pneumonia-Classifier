@@ -5,7 +5,7 @@
     <title>Pneumonia Classifier</title>
     <!-- Load TensorFlow.js -->
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
-    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="style.css" />
     <style>
       #imageContainer img {
         max-width: 300px;
@@ -14,19 +14,21 @@
     </style>
   </head>
   <body>
-    <h1>Pneumonia Classifier</h1>
-    <input
-      type="file"
-      id="imageUpload"
-      accept="image/*"
-    />
-    <button onclick="loadModel()">
-      Load Model
-    </button>
-    <button onclick="predict()">Predict</button>
-    <div id="imageContainer"></div>
-    <div id="status"></div>
-    <div id="predictionResult"></div>
+    <div class="maindiv">
+      <h1>Pneumonia Classifier</h1>
+      <input
+        type="file"
+        id="imageUpload"
+        accept="image/*"
+      />
+      <button onclick="loadModel()">
+        Load Model
+      </button>
+      <button onclick="predict()">Predict</button>
+      <div id="status"></div>
+      <div id="imageContainer"></div>
+      <div id="predictionResult"></div>
+    </div>
 
     <!-- Your JavaScript Code -->
     <script>
